@@ -5,18 +5,6 @@ for Rail Track Monitoring"**. The system leverages cameras already installed for
 
 ---
 
-##  Project Overview
-
-This research investigates whether standard RGB cameras installed for ATO can be repurposed for rail defect detection. The pipeline includes:
-- **Data preprocessing** to handle variable lighting and operational conditions
-- **Deep learning-based defect classification** using transformer and CNN architectures
-- **Sequence-aware post-processing** to reduce false positives
-- **Explainability analysis** to validate model decisions
-
-The system achieves high precision on held-out test data while maintaining interpretability for operational deployment.
-
----
-
 ##  Repository Structure
 ├── AnalyzeAndPreprocessOSDAR23_1.ipynb # Dataset analysis, masking, patch extraction & preprocessing
 ├── Create_labels_masks_2.ipynb # Labeling functions, mask creation, dataset organization
