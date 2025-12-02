@@ -4,19 +4,6 @@ This repository contains the code and pipeline for the thesis project **"Leverag
 for Rail Track Monitoring"**. The system leverages cameras already installed for train automation to perform continuous rail condition monitoring, aiming to provide an early-warning mechanism for rail surface degradation.
 
 ---
-
-##  Repository Structure
-├── AnalyzeAndPreprocessOSDAR23_1.ipynb # Dataset analysis, masking, patch extraction & preprocessing
-├── Create_labels_masks_2.ipynb # Labeling functions, mask creation, dataset organization
-├── splitData_inspectResults_3.ipynb # Proposed splitting algorithm, data leakage checks
-├── Experiment1_Experiment2.ipynb # Preprocessing experiments & cross-validation analysis
-├── Experiment3.ipynb # Model comparison (DeiT, ResNet, PatchCore)
-├── Experiment4.ipynb # Sequential refinement methods
-├── Experiment5.ipynb # Hyperparameter tuning & final test on held-out set
-├── Experiment6.ipynb # Explainability analysis (XAI)
-├── requirements.txt # Python dependencies
-└── README.md # This file
-
 ## Dataset
 
 The project uses the **OSDAR23** dataset, which contains rail track images from Hamburg stations.
