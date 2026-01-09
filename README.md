@@ -8,10 +8,27 @@ for Rail Track Monitoring"**. The designed system leverages cameras already inst
 
 The project uses the **OSDAR23** dataset, which contains rail track images from Hamburg stations.
 
-### Setup Instructions:
-1. Download the dataset from: [https://data.fid-move.de/dataset/osdar23](https://data.fid-move.de/dataset/osdar23) 
-2. Place each folder from the extracted data (e.g. 1_calibration_1.1, 1_calibration_1.2, etc.) in: `./rail_data/DB/`
-3. Run the notebooks in the numerical order presented in the following section (1.→8.) to reproduce the project.
+---
+
+## Setup Instructions:
+### Prerequisites
+- Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or Anaconda
+- For GPU acceleration: NVIDIA GPU with CUDA 11.8 compatible drivers
+### Steps
+1. Clone the repository and set the working directory
+```bash
+git clone https://github.com/mmiltiadous/MSc-thesis-ATO
+cd MSc-thesis-ATO
+```
+2. Download the OSDAR23 dataset from: [https://data.fid-move.de/dataset/osdar23](https://data.fid-move.de/dataset/osdar23) 
+3. Extract the downloaded data and place each folder (e.g., 1_calibration_1.1, 1_calibration_1.2, etc.) in: `./rail_data/DB/`
+4. Set up the virtual environment using conda:
+```bash 
+conda env create -f environment.yml
+conda activate thesis_env
+pip install -r requirements.txt
+```
+5. Run the notebooks in the numerical order presented in the following section (1.→8.) to reproduce the project.
 
 ---
 
