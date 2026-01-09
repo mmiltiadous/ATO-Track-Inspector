@@ -1,6 +1,6 @@
 # Rail Surface Defect Detection using ATO Cameras
 
-This repository contains the code and pipeline for the thesis project **"Leveraging Autonomous Train Operation Cameras
+This repository contains the code and pipeline for the MSc thesis project **"Leveraging Autonomous Train Operation Cameras
 for Rail Track Monitoring"**. The system leverages cameras already installed for train automation to perform continuous rail condition monitoring, aiming to provide an early-warning mechanism for rail surface degradation.
 
 ---
