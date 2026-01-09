@@ -3,12 +3,11 @@
 This repository contains the code and pipeline for the MSc thesis project **"Leveraging Autonomous Train Operation Cameras
 for Rail Track Monitoring"**. The designed system leverages cameras already installed for train automation to perform continuous rail condition monitoring, aiming to provide an early-warning mechanism for rail surface degradation.
 
----
+
 ## Dataset
 
 The project uses the **OSDAR23** dataset, which contains rail track images from Hamburg stations.
 
----
 
 ## Setup Instructions:
 ### Prerequisites
@@ -30,7 +29,7 @@ pip install -r requirements.txt
 ```
 5. Run the notebooks in the numerical order presented in the following section (1.→8.) to reproduce the project.
 
----
+
 
 ##  Pipeline Workflow
 
