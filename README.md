@@ -1,7 +1,7 @@
 # Rail Surface Defect Detection using ATO Cameras
 
 This repository contains the code and pipeline for the MSc thesis project **"Leveraging Autonomous Train Operation Cameras
-for Rail Track Monitoring"**. The system leverages cameras already installed for train automation to perform continuous rail condition monitoring, aiming to provide an early-warning mechanism for rail surface degradation.
+for Rail Track Monitoring"**. The designed system leverages cameras already installed for train automation to perform continuous rail condition monitoring, aiming to provide an early-warning mechanism for rail surface degradation.
 
 ---
 ## Dataset
@@ -11,7 +11,7 @@ The project uses the **OSDAR23** dataset, which contains rail track images from 
 ### Setup Instructions:
 1. Download the dataset from: [https://data.fid-move.de/dataset/osdar23](https://data.fid-move.de/dataset/osdar23)
 2. Place the extracted data in: `./rail_data/DB/`
-3. Run the notebooks in numerical order (1→8) to reproduce the full pipeline.
+3. Run the notebooks in the numerical order prsented in the following section (1.→8.) to reproduce the full pipeline.
 
 ---
 
