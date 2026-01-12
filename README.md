@@ -41,7 +41,7 @@ The necessary data for experiment (including labels and masks for defects) are c
 - Corrects metadata inconsistencies
 - Masks rail tracks and crops patches with black background
 - Extracts patches per frame/track (optionally multiple patches per track for larger datasets)
-- Applies all 6 preprocessing pipelines from the paper
+- Applies all 6 preprocessing pipelines described in the paper
 
 ### Step 2. **Labeling & Mask Creation**
 **`Create_labels_masks_2.ipynb`**  
