@@ -89,7 +89,7 @@ The necessary data for experiment (including labels and masks for defects) are c
 
 ### Step 8. **Experiment 6: Explainability Analysis**
 **`Experiment6.ipynb`**  
-- Applies gradient-based attribution methods (Grad-CAM, Saliency Maps)
+- Applies gradient-based attribution methods
 - Analyzes True Positives, True Negatives, and False Positives
 - Identifies failure modes and model attention patterns
 - Provides visual justifications for model decisions
