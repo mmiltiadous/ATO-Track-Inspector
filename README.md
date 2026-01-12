@@ -8,8 +8,7 @@ The project develops an end-to-end computer vision system for detecting rail sur
 
 ## Dataset
 
-The project uses the **OSDAR23** dataset, which contains rail track images from Hamburg stations.
-
+The project uses the **OSDAR23** dataset, which contains rail track images from Hamburg stations. From this, a new dataset is extracted with rail track patches which is used for this work.
 
 ## Setup Instructions:
 ### Prerequisites
@@ -29,13 +28,15 @@ conda env create -f environment.yml
 conda activate thesis_env
 pip install -r requirements.txt
 ```
-5. Run the notebooks in the numerical order presented in the following section (1.→8.) to reproduce the project.
+5. Run the notebooks in the numerical order presented in the Pipeline Workflow section (Step 1→ Step 8) to reproduce the project.
 
+## Quick Access for Experiments
+The necessary data for experiments are created after running Steps 1 and 2. Those are in the sequential/ folder. For directly running experiments, you can skip Steps 1 and 2 and start from Step 3, which splits the data. Then, Steps 4-8 include the different experiments.
 
 
 ##  Pipeline Workflow
 
-### 1. **Data Preparation & Preprocessing**
+### Step 1. **Data Preparation & Preprocessing**
 **`AnalyzeAndPreprocessOSDAR23_1.ipynb`**  
 - Analyzes dataset structure and filters irrelevant data
 - Corrects metadata inconsistencies
@@ -43,27 +44,27 @@ pip install -r requirements.txt
 - Extracts patches per frame/track (optionally multiple patches per track for larger datasets)
 - Applies all 6 preprocessing pipelines from the paper
 
-### 2. **Labeling & Mask Creation**
+### Step 2. **Labeling & Mask Creation**
 **`Create_labels_masks_2.ipynb`**  
 - Provides functions to connect patches with source images using filename patterns
 - Implements labeling functions for defect annotation
 - Creates binary masks for defect regions
 - Organizes labeled data into structured folders
 
-### 3. **Data Splitting & Validation**
+### Step 3. **Data Splitting & Validation**
 **`splitData_inspectResults_3.ipynb`**  
 - Implements the proposed group-aware splitting algorithm (by station/sequence)
 - Prevents data leakage between train/validation/test sets
 - Validates split integrity and checks for potential leakage
 
-### 4. **Experiments 1 & 2: Preprocessing Analysis**
+### Step 4. **Experiments 1 & 2: Preprocessing Analysis**
 **`Experiment1_Experiment2.ipynb`**  
 - **Experiment 1**: Compares 6 preprocessing pipelines using AUPRC metrics
 - **Experiment 2**: Performs cross-validation with different random seeds
 - Saves performance metrics and generates publication-ready plots
 - Analyzes sensitivity to data splits
 
-### 5. **Experiment 3: Model Comparison**
+### Step 5. **Experiment 3: Model Comparison**
 **`Experiment3.ipynb`**  
 - Implements DeiT-Small (both distilled and standard variants)
 - Compares against ResNet-18 (results imported from Experiment 2)
@@ -71,7 +72,7 @@ pip install -r requirements.txt
 - Analyzes results from all three models and creates comparison plots
 - Demonstrates transformer superiority for global context understanding
 
-### 6. **Experiment 4: Sequential Refinement**
+### Step 6. **Experiment 4: Sequential Refinement**
 **`Experiment4.ipynb`**  
 - Applies sequence-aware post-processing methods:
   - Confidence-weighted smoothing
@@ -80,14 +81,14 @@ pip install -r requirements.txt
 - Compares heuristic vs. learned refinement approaches
 - Generates thesis plots for sequential analysis
 
-### 7. **Experiment 5: Final Evaluation**
+### Step 7. **Experiment 5: Final Evaluation**
 **`Experiment5.ipynb`**  
 - Performs hyperparameter tuning on validation set
 - Evaluates final pipeline on completely held-out test set
 - Reports precision, recall, F1-score, and AUPRC
 - Demonstrates near-perfect performance on unseen data
 
-### 8. **Experiment 6: Explainability Analysis**
+### Step 8. **Experiment 6: Explainability Analysis**
 **`Experiment6.ipynb`**  
 - Applies gradient-based attribution methods (Grad-CAM, Saliency Maps)
 - Analyzes True Positives, True Negatives, and False Positives
