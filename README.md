@@ -23,10 +23,9 @@ cd MSc-thesis-ATO
 2. Download the OSDAR23 dataset from: [https://data.fid-move.de/dataset/osdar23](https://data.fid-move.de/dataset/osdar23) 
 3. Extract the downloaded data and place each folder (e.g., 1_calibration_1.1, 1_calibration_1.2, etc.) in: `./rail_data/DB/`
 4. Set up the virtual environment using conda:
-```bash 
+```bash
 conda env create -f environment.yml
-conda activate thesis_env
-pip install -r requirements.txt
+conda activate dbthesis_env
 ```
 5. Run the notebooks in the numerical order presented in the Pipeline Workflow section (Step 1→ Step 8) to reproduce the project.
 
