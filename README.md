@@ -6,6 +6,7 @@ This repository contains the implementation for my MSc thesis: **"Leveraging Aut
 
 The project develops an end-to-end computer vision system for detecting rail surface defects using forward-facing cameras from autonomous train operation (ATO) systems. The system aims to provide an early-warning mechanism for rail infrastructure monitoring and includes novel preprocessing, transformer-based classification, and sequence-aware post-processing.
 
+The full thesis is available here: https://theses.liacs.nl/pdf/2025-2026-MiltiadousMMyriana.pdf
 ## Dataset
 
 The project uses the **OSDAR23** dataset, which contains rail track images from Hamburg stations. From this, a new dataset is extracted with rail track patches which is used for this work.
