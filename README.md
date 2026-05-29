@@ -53,7 +53,17 @@ The necessary data for experiment (including labels and masks for defects) are c
 
 ### Step 3. **Data Splitting & Validation**
 **`splitData_inspectResults_3.ipynb`**  
-- Implements the proposed group-aware splitting algorithm (by station/sequence)
+- Implements the proposed group-aware splitting algorithm (by station/sequence:
+For each preprocessing variant (original_data_folds, black_data_folds, blackclahe_data_folds, blur_data_folds, blurclahe_data_folds, and blurclahebw_data_folds), two separate split structures are generated:
+  a) Outer split: fold_0 val set is reserved for the final testing stage (Exp. 5).
+  b) Inner split: used for Experimennts 1--4
+Each split contains five folds: fold_0, fold_1, fold_2, fold_3, and fold_4.
+Within every fold, the following directories are created:
+train/ : training images organized into normal and defective classes/folders.
+train_masks/ : segmentation masks corresponding to defective training samples.
+val/ : validation images for both normal and defective classes in two seperate folders.
+val_masks/ —:segmentation masks corresponding to defective validation samples.
+
 - Prevents data leakage between train/validation/test sets
 - Validates split integrity and checks for potential leakage
 
