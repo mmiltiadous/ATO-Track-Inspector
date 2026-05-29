@@ -98,6 +98,8 @@ The notebook also validates split integrity and prevents data leakage between tr
 - Analyzes results from all three models and creates comparison plots
 - Demonstrates transformer superiority for global context understanding
 
+Note: The results of Experiment 3 are provided in the results_experiment3/ directory. Therefore, the sections Inspect Results, Overall Metrics for the Best Model (DeiT-S) Selected for Tuning, Ensemble Metrics, and Plots of **`Experiment3.ipynb`** can be executed directly to reproduce the evaluation summaries and visualizations without rerunning the experiments.
+
 #### Running PatchCore Guidelines
 
 To run PatchCore, follow the instructions provided in the official repository:
@@ -127,7 +129,6 @@ For each fold (`fold_i`), the dataset is constructed using the generated split f
 * The contents of `ground_truth/defective/` are taken from `fold_i/val_masks/defective`.
 
 A separate PatchCore-compatible dataset directory must be created for every fold (`fold_0`–`fold_4`), since each fold represents a different train/validation split used during cross-validation experiments.
-
 
 ### Step 6. **Experiment 4: Sequential Refinement**
 **`Experiment4.ipynb`**  
