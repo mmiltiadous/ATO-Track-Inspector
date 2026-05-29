@@ -1,0 +1,8 @@
+{
+  "n_train": 1090,
+  "n_val": 210,
+  "train_class_counts": {
+    "defective": 233,
+    "good": 857
+  }
+}

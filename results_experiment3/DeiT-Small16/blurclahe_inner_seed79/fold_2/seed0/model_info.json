@@ -1,0 +1,15 @@
+{
+  "model_name": "deit_small_patch16_224",
+  "pretrained": true,
+  "num_parameters": 21666434,
+  "optimizer": "adamw",
+  "base_lr": 0.0005,
+  "scaled_lr": 0.000125,
+  "weight_decay": 0.05,
+  "scheduler": "LambdaLR (linear warmup + cosine)",
+  "warmup_epochs": 5,
+  "batch_size": 64,
+  "img_size": 224,
+  "drop_path_rate": 0.1,
+  "device": "cuda"
+}
