@@ -51,21 +51,37 @@ The necessary data for experiment (including labels and masks for defects) are c
 - Creates binary masks for defect regions
 - Organizes labeled data into structured folders
 
-### Step 3. **Data Splitting & Validation**
-**`splitData_inspectResults_3.ipynb`**  
-- Implements the proposed group-aware splitting algorithm (by station/sequence:
-For each preprocessing variant (original_data_folds, black_data_folds, blackclahe_data_folds, blur_data_folds, blurclahe_data_folds, and blurclahebw_data_folds), two separate split structures are generated:
-  a) Outer split: fold_0 val set is reserved for the final testing stage (Exp. 5).
-  b) Inner split: used for Experimennts 1--4
-Each split contains five folds: fold_0, fold_1, fold_2, fold_3, and fold_4.
-Within every fold, the following directories are created:
-train/ : training images organized into normal and defective classes/folders.
-train_masks/ : segmentation masks corresponding to defective training samples.
-val/ : validation images for both normal and defective classes in two seperate folders.
-val_masks/ —:segmentation masks corresponding to defective validation samples.
+### Step 3. Data Splitting & Validation
 
-- Prevents data leakage between train/validation/test sets
-- Validates split integrity and checks for potential leakage
+**`splitData_inspectResults_3.ipynb`**
+
+Implements the proposed group-aware data splitting algorithm based on station and sequence information. For each preprocessing variant (`original_data_folds`, `black_data_folds`, `blackclahe_data_folds`, `blur_data_folds`, `blurclahe_data_folds`, and `blurclahebw_data_folds`), two separate split configurations are generated:
+
+* **Outer split**: `fold_0` validation set is reserved for the final testing stage (**Experiment 5**).
+* **Inner split**: used for **Experiments 1–4**.
+
+Each split contains five folds (`fold_0`–`fold_4`). Within every fold, the following directory structure is created:
+
+```text id="w7v9rw"
+train/
+├── normal/
+└── defective/
+
+train_masks/
+├── defective/
+
+val/
+├── normal/
+└── defective/
+
+val_masks/
+├── defective/
+```
+
+The `train/` and `val/` directories contain images separated into `normal` and `defective` classes, while `train_masks/` and `val_masks/` contain the corresponding segmentation masks for defective samples.
+
+The notebook also validates split integrity and prevents data leakage between training, validation, and test sets.
+
 
 ### Step 4. **Experiments 1 & 2: Preprocessing Analysis**
 **`Experiment1_Experiment2.ipynb`**  
