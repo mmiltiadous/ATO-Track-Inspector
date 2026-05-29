@@ -98,6 +98,37 @@ The notebook also validates split integrity and prevents data leakage between tr
 - Analyzes results from all three models and creates comparison plots
 - Demonstrates transformer superiority for global context understanding
 
+#### Running PatchCore Guidelines
+
+To run PatchCore, follow the instructions provided in the official repository:
+
+[PatchCore Official Repository](https://github.com/amazon-science/patchcore-inspection?utm_source=chatgpt.com)
+
+Each preprocessing variant should be organized into a separate dataset directory following the PatchCore format:
+
+```text id="4m3t2g"
+dataset_name/
+├── train/
+├── test/
+└── ground_truth/
+```
+
+The directory structure should be organized as follows:
+
+* `train/good/` : contains all non-defective training samples.
+* `test/good/` : contains normal validation samples.
+* `test/defective/` : contains defective validation samples.
+* `ground_truth/defective/` : contains segmentation masks corresponding to defective validation samples.
+
+For each fold (`fold_i`), the dataset is constructed using the generated split folders:
+
+* The contents of `train/good/` are taken from `fold_i/train/normal/`.
+* The contents of `test/good/` and `test/defective/` are taken from `fold_i/val/good` and `fold_i/val/defective` respectively.
+* The contents of `ground_truth/defective/` are taken from `fold_i/val_masks/defective`.
+
+A separate PatchCore-compatible dataset directory must be created for every fold (`fold_0`–`fold_4`), since each fold represents a different train/validation split used during cross-validation experiments.
+
+
 ### Step 6. **Experiment 4: Sequential Refinement**
 **`Experiment4.ipynb`**  
 - Applies sequence-aware post-processing methods:
