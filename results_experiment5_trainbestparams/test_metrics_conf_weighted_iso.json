@@ -1,0 +1,16 @@
+{
+  "accuracy": 0.9967741935483871,
+  "balanced_accuracy": 0.9977272727272728,
+  "precision": 0.989010989010989,
+  "recall": 1.0,
+  "f1": 0.994475138121547,
+  "auroc": NaN,
+  "auprc": NaN,
+  "tp": 90,
+  "tn": 219,
+  "fp": 1,
+  "fn": 0,
+  "sigma": 0.5,
+  "conf_thr": 0.05,
+  "context": 1
+}

@@ -1,0 +1,10 @@
+{
+  "learning_rate": 0.0004638630972397277,
+  "weight_decay": 0.017336465350777208,
+  "warmup_epochs": 5,
+  "batch_size": 64,
+  "epochs": 50,
+  "img_size": 224,
+  "num_workers": 0,
+  "drop_path_rate": 0.1
+}
