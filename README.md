@@ -40,7 +40,7 @@ The necessary data for experiments (including labels and masks for defects) are 
 
 ![Pipeline Workflow Overview](PipelineOverview.png)
 
-### Step 1. **Data Preparation & Preprocessing** (A1 -- A8)
+### Step 1. **Data Preparation & Preprocessing** (A1 - A8, B1 - B5)
 **`AnalyzeAndPreprocessOSDAR23_1.ipynb`**  
 - Analyzes dataset structure and filters irrelevant data
 - Corrects metadata inconsistencies
@@ -48,7 +48,7 @@ The necessary data for experiments (including labels and masks for defects) are 
 - Extracts patches per frame/track (optionally multiple patches per track for larger datasets)
 - Applies all 6 preprocessing pipelines described in the paper
 
-### Step 2. **Labeling & Mask Creation**
+### Step 2. **Labeling & Mask Creation** (B6)
 **`Create_labels_masks_2.ipynb`**  
 - Provides functions to connect patches with source images using filename patterns
 - Implements labeling functions for defect annotation
