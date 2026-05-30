@@ -4,7 +4,7 @@
 
 This repository contains the implementation for my MSc thesis: **"Leveraging Autonomous Train Operation Cameras for Rail Track Monitoring"**.
 
-The project develops an end-to-end computer vision system for detecting rail surface defects using forward-facing cameras from autonomous train operation (ATO) systems. The system aims to provide an early-warning mechanism for rail infrastructure monitoring and includes novel preprocessing, transformer-based classification, and sequence-aware post-processing.
+The project develops an end-to-end computer vision system for detecting rail surface defects using forward-facing cameras from autonomous train operation (ATO) systems. The system aims to provide an early-warning mechanism for rail infrastructure monitoring and includes novel preprocessing, novel stratified data splitting strategy, transformer-based classification, and sequence-aware post-processing.
 
 The full thesis is available here: https://theses.liacs.nl/pdf/2025-2026-MiltiadousMMyriana.pdf
 ## Dataset
@@ -18,8 +18,8 @@ The project uses the **OSDAR23** dataset, which contains rail track images from 
 ### Steps
 1. Clone the repository and set the working directory
 ```bash
-git clone https://github.com/mmiltiadous/MSc-thesis-ATO
-cd MSc-thesis-ATO
+git clone https://github.com/mmiltiadous/ATO-Track-Inspector
+cd ATO-Track-Inspector
 ```
 2. Download the OSDAR23 dataset from: [https://data.fid-move.de/dataset/osdar23](https://data.fid-move.de/dataset/osdar23) 
 3. Extract the downloaded data and place each folder (e.g., 1_calibration_1.1, 1_calibration_1.2, etc.) in: `./rail_data/DB/`
@@ -31,7 +31,7 @@ conda activate dbthesis_env
 5. Run the notebooks in the numerical order presented in the Pipeline Workflow section (Step 1→ Step 8) to reproduce the project.
 
 ## Quick Access for Experiments
-The necessary data for experiment (including labels and masks for defects) are created after running Steps 1 and 2. Those are in the sequential/ folder. For directly running experiments, you can skip Steps 1 and 2 and start from Step 3, which splits the created data. Then, Steps 4-8 include the different experiments.
+The necessary data for experiments (including labels and masks for defects) are created after running Steps 1 and 2. Those are in the sequential/ folder. For directly running experiments, you can skip Steps 1 and 2 and start from Step 3, which splits the created data. Then, Steps 4-8 include the different experiments.
 
 
 ##  Pipeline Workflow
@@ -40,7 +40,7 @@ The necessary data for experiment (including labels and masks for defects) are c
 
 ![Pipeline Workflow Overview](PipelineOverview.png)
 
-### Step 1. **Data Preparation & Preprocessing**
+### Step 1. **Data Preparation & Preprocessing** (A1 - A8, B1 - B5)
 **`AnalyzeAndPreprocessOSDAR23_1.ipynb`**  
 - Analyzes dataset structure and filters irrelevant data
 - Corrects metadata inconsistencies
@@ -48,7 +48,7 @@ The necessary data for experiment (including labels and masks for defects) are c
 - Extracts patches per frame/track (optionally multiple patches per track for larger datasets)
 - Applies all 6 preprocessing pipelines described in the paper
 
-### Step 2. **Labeling & Mask Creation**
+### Step 2. **Labeling & Mask Creation** (B6)
 **`Create_labels_masks_2.ipynb`**  
 - Provides functions to connect patches with source images using filename patterns
 - Implements labeling functions for defect annotation
