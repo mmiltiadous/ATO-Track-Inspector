@@ -1,0 +1,15 @@
+{
+  "model_name": "deit_small_patch16_224",
+  "pipeline": "blurclahe_inner_seed79",
+  "fold_name": "fold_4",
+  "seed": 42,
+  "epochs": 50,
+  "batch_size": 64,
+  "base_lr": 0.0005,
+  "weight_decay": 0.05,
+  "warmup_epochs": 5,
+  "img_size": 224,
+  "num_workers": 0,
+  "optim": "adamw",
+  "drop_path_rate": 0.1
+}

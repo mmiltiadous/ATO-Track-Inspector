@@ -1,0 +1,8 @@
+{
+  "class_names": [
+    "defective",
+    "good"
+  ],
+  "positive_class": "defective",
+  "pos_idx": 0
+}

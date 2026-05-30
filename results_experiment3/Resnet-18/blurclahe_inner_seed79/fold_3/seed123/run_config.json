@@ -1,0 +1,12 @@
+{
+  "pipeline": "blurclahe_inner_seed79",
+  "fold_name": "fold_3",
+  "seed": 123,
+  "epochs": 50,
+  "batch_size": 64,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "optim": "adamw",
+  "num_workers": 0,
+  "img_size": 224
+}
