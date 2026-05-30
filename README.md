@@ -98,7 +98,7 @@ The notebook also validates split integrity and prevents data leakage between tr
 - Analyzes results from all three models and creates comparison plots
 - Demonstrates transformer superiority for global context understanding
 
-Note: The results of Experiment 3 are provided in the results_experiment3/ directory. Therefore, the sections Inspect Results, Overall Metrics for the Best Model (DeiT-S) Selected for Tuning, Ensemble Metrics, and Plots of **`Experiment3.ipynb`** can be executed directly to reproduce the evaluation summaries and visualizations without rerunning the experiments.
+> **Note:** The results of Experiment 3 are provided in the results_experiment3/ directory. Therefore, the sections Inspect Results, Overall Metrics for the Best Model (DeiT-S) Selected for Tuning, Ensemble Metrics, and Plots of **`Experiment3.ipynb`** can be executed directly to reproduce the evaluation summaries and visualizations without rerunning the experiments.
 
 #### Running PatchCore Guidelines
 
