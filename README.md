@@ -4,7 +4,7 @@
 
 This repository contains the implementation for my MSc thesis: **"Leveraging Autonomous Train Operation Cameras for Rail Track Monitoring"**.
 
-The project develops an end-to-end computer vision system for detecting rail surface defects using forward-facing cameras from autonomous train operation (ATO) systems. The system aims to provide an early-warning mechanism for rail infrastructure monitoring and includes novel preprocessing, transformer-based classification, and sequence-aware post-processing.
+The project develops an end-to-end computer vision system for detecting rail surface defects using forward-facing cameras from autonomous train operation (ATO) systems. The system aims to provide an early-warning mechanism for rail infrastructure monitoring and includes novel preprocessing, novel stratified data splitting strategy, transformer-based classification, and sequence-aware post-processing.
 
 The full thesis is available here: https://theses.liacs.nl/pdf/2025-2026-MiltiadousMMyriana.pdf
 ## Dataset
