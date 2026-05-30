@@ -104,7 +104,9 @@ The notebook also validates split integrity and prevents data leakage between tr
 
 To run PatchCore, follow the instructions provided in the official repository:
 
-[PatchCore Official Repository](https://github.com/amazon-science/patchcore-inspection?utm_source=chatgpt.com)
+[PatchCore Official Repository](https://github.com/amazon-science/patchcore-inspection?utm_source=chatgpt.com). The PatchcoreFileReplacement folder of this repo contains a modified version of the original run_patchcore.py file. All changes made to the original implementation are explicitly marked in the code using the following annotations:
+# MODIFICATION {i} START -- # MODIFICATION {i} END
+where {i} is the identifier of a specific modification.
 
 Each preprocessing variant should be organized into a separate dataset directory following the PatchCore format:
 
