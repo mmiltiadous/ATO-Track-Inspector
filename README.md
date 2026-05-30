@@ -36,6 +36,10 @@ The necessary data for experiment (including labels and masks for defects) are c
 
 ##  Pipeline Workflow
 
+**Overview:**
+
+![Pipeline Workflow Overview](PipelineOverview.png)
+
 ### Step 1. **Data Preparation & Preprocessing**
 **`AnalyzeAndPreprocessOSDAR23_1.ipynb`**  
 - Analyzes dataset structure and filters irrelevant data
