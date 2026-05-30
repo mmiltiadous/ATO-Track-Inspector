@@ -31,7 +31,7 @@ conda activate dbthesis_env
 5. Run the notebooks in the numerical order presented in the Pipeline Workflow section (Step 1→ Step 8) to reproduce the project.
 
 ## Quick Access for Experiments
-The necessary data for experiment (including labels and masks for defects) are created after running Steps 1 and 2. Those are in the sequential/ folder. For directly running experiments, you can skip Steps 1 and 2 and start from Step 3, which splits the created data. Then, Steps 4-8 include the different experiments.
+The necessary data for experiments (including labels and masks for defects) are created after running Steps 1 and 2. Those are in the sequential/ folder. For directly running experiments, you can skip Steps 1 and 2 and start from Step 3, which splits the created data. Then, Steps 4-8 include the different experiments.
 
 
 ##  Pipeline Workflow
