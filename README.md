@@ -18,8 +18,8 @@ The project uses the **OSDAR23** dataset, which contains rail track images from 
 ### Steps
 1. Clone the repository and set the working directory
 ```bash
-git clone https://github.com/mmiltiadous/MSc-thesis-ATO
-cd MSc-thesis-ATO
+git clone https://github.com/mmiltiadous/ATO-Track-Inspector
+cd ATO-Track-Inspector
 ```
 2. Download the OSDAR23 dataset from: [https://data.fid-move.de/dataset/osdar23](https://data.fid-move.de/dataset/osdar23) 
 3. Extract the downloaded data and place each folder (e.g., 1_calibration_1.1, 1_calibration_1.2, etc.) in: `./rail_data/DB/`
