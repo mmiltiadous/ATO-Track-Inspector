@@ -1,0 +1,34 @@
+{
+  "dataset_statistics": {
+    "total_samples": 310,
+    "defective_samples": 90,
+    "good_samples": 220
+  },
+  "performance_summary": {
+    "tp": 90,
+    "tn": 217,
+    "fp": 3,
+    "fn": 0,
+    "accuracy": 0.9903225806451613,
+    "precision": 0.967741935483871
+  },
+  "confidence_statistics": {
+    "mean_confidence_correct": 0.2820376714472498,
+    "std_confidence_correct": 0.42141740505841013
+  },
+  "temporal_statistics": {
+    "total_sequences": 13,
+    "sequences_with_defects": 1,
+    "avg_sequence_length": 23.846153846153847
+  },
+  "postprocessing_impact": {
+    "multiscale": {
+      "changed_predictions": 4,
+      "improvements": 2
+    },
+    "conf_weighted_iso": {
+      "changed_predictions": 2,
+      "improvements": 2
+    }
+  }
+}
