@@ -150,5 +150,8 @@ A separate PatchCore-compatible dataset directory must be created for every fold
 - Analyzes True Positives, True Negatives, and False Positives
 - Identifies failure modes and model attention patterns
 - Provides visual justifications for model decisions
-> **Note:** This file is divided into two sections. The first section analyses the results from all three models in Experiment 3, while the second analyses the results of the final model from Experiment 5. The results_experiment6_xai folder contains all saliency maps generated using the code presented in the second section. Example: ![Saliency Map Example](results_experiment6_xai/TN_ex1_comparison.png)
+> **Note:** This file is divided into two sections. The first section analyses the results from all three models in Experiment 3, while the second analyses the results of the final model from Experiment 5. The results_experiment6_xai folder contains all saliency maps generated using the code presented in the second section. 
 
+**Example saliency map:**
+
+![Saliency Map TN Example](results_experiment6_xai/TN_ex1_comparison.png)
