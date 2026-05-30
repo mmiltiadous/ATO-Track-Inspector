@@ -154,4 +154,4 @@ A separate PatchCore-compatible dataset directory must be created for every fold
 
 **Example saliency map:**
 
-![Saliency Map TN Example](results_experiment6_xai/TN_ex1_comparison.png)
+![Saliency Map TN Example](results_experiment6_xai/comparisons/TN_ex1_comparison.png)
