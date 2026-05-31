@@ -90,8 +90,8 @@ The notebook also validates split integrity and prevents data leakage between tr
 ### Step 4. **Experiments 1 & 2: Preprocessing Analysis**
 **`Experiment1_Experiment2.ipynb`**  
 - **Experiment 1**: Compares 6 preprocessing pipelines using AUPRC metrics
-- **Experiment 2**: Performs cross-validation with different random seeds
-- Saves performance metrics and generates publication-ready plots
+- **Experiment 2**: Evaluates the impact of different random seeds on cross-validation splits.
+- Saves performance metrics and generates plots
 - Analyzes sensitivity to data splits
 
 ### Step 5. **Experiment 3: Model Comparison**
