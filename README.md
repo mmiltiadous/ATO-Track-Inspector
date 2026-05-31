@@ -119,7 +119,7 @@ dataset_name/
 The directory structure should be organized as follows:
 
 * `train/good/` : contains all non-defective training samples.
-* `test/good/` : contains normal validation samples.
+* `test/good/` : contains non-defective validation samples.
 * `test/defective/` : contains defective validation samples.
 * `ground_truth/defective/` : contains segmentation masks corresponding to defective validation samples.
 
