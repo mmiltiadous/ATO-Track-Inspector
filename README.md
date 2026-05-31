@@ -146,6 +146,7 @@ A separate PatchCore-compatible dataset directory must be created for every fold
 - Evaluates final pipeline on completely held-out test set
 - Reports precision, recall, F1-score, and AUPRC
 - Demonstrates near-perfect performance on unseen data
+- Results obtained with the selected best-performing model are available in the results_experiment5_trainbestparams folder
 
 ### Step 8. **Experiment 6: Explainability Analysis**
 **`Experiment6.ipynb`**  
