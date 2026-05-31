@@ -138,7 +138,7 @@ A separate PatchCore-compatible dataset directory must be created for every fold
   - Isolated false positive removal
   - Bidirectional LSTM refinement
 - Compares heuristic vs. learned refinement approaches
-- Generates thesis plots for sequential analysis
+- Generates plots for sequential analysis
 
 ### Step 7. **Experiment 5: Final Evaluation**
 **`Experiment5.ipynb`**  
