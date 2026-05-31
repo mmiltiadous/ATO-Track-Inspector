@@ -97,8 +97,7 @@ The notebook also validates split integrity and prevents data leakage between tr
 ### Step 5. **Experiment 3: Model Comparison**
 **`Experiment3.ipynb`**  
 - Implements DeiT-Small (both distilled and standard variants)
-- Compares against ResNet-18 (results imported from Experiment 2)
-- Integrates PatchCore from original repository for unsupervised baseline
+- Compares against ResNet-18 (results imported from Experiment 2) and PatchCore (unsupervised baseline)
 - Analyzes results from all three models and creates comparison plots
 - Demonstrates transformer superiority for global context understanding
 
