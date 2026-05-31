@@ -68,21 +68,21 @@ Each split contains five folds (`fold_0`–`fold_4`). Within every fold, the fol
 
 ```text id="w7v9rw"
 train/
-├── normal/
+├── good/
 └── defective/
 
 train_masks/
 ├── defective/
 
 val/
-├── normal/
+├── good/
 └── defective/
 
 val_masks/
 ├── defective/
 ```
 
-The `train/` and `val/` directories contain images separated into `normal` and `defective` classes, while `train_masks/` and `val_masks/` contain the corresponding segmentation masks for defective samples.
+The `train/` and `val/` directories contain images separated into `good` and `defective` classes, while `train_masks/` and `val_masks/` contain the corresponding segmentation masks for defective samples.
 
 The notebook also validates split integrity and prevents data leakage between training, validation, and test sets.
 
@@ -125,7 +125,7 @@ The directory structure should be organized as follows:
 
 For each fold (`fold_i`), the dataset is constructed using the generated split folders:
 
-* The contents of `train/good/` are taken from `fold_i/train/normal/`.
+* The contents of `train/good/` are taken from `fold_i/train/good/`.
 * The contents of `test/good/` and `test/defective/` are taken from `fold_i/val/good` and `fold_i/val/defective` respectively.
 * The contents of `ground_truth/defective/` are taken from `fold_i/val_masks/defective`.
 
